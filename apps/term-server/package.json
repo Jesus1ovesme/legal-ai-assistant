@@ -1,0 +1,17 @@
+{
+  "name": "@danilurist/term-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cookie": "^0.6.0",
+    "iron-session": "^8.0.4",
+    "node-pty": "^1.0.0",
+    "pg": "^8.13.1",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@danilurist/types": [
+        "../../packages/types/src/index.ts"
+      ],
+      "@danilurist/types/*": [
+        "../../packages/types/src/*"
+      ],
+      "@danilurist/db": [
+        "../../packages/db/src/index.ts"
+      ],
+      "@danilurist/db/*": [
+        "../../packages/db/src/*"
+      ],
+      "@danilurist/sandbox": [
+        "../../packages/sandbox/src/index.ts"
+      ],
+      "@danilurist/sandbox/*": [
+        "../../packages/sandbox/src/*"
+      ],
+      "@danilurist/claude-client": [
+        "../../packages/claude-client/src/index.ts"
+      ],
+      "@danilurist/claude-client/*": [
+        "../../packages/claude-client/src/*"
+      ],
+      "@danilurist/claude-tools": [
+        "../../packages/claude-tools/src/index.ts"
+      ],
+      "@danilurist/claude-tools/*": [
+        "../../packages/claude-tools/src/*"
+      ],
+      "@danilurist/embeddings": [
+        "../../packages/embeddings/src/index.ts"
+      ],
+      "@danilurist/embeddings/*": [
+        "../../packages/embeddings/src/*"
+      ],
+      "@danilurist/ocr": [
+        "../../packages/ocr/src/index.ts"
+      ],
+      "@danilurist/ocr/*": [
+        "../../packages/ocr/src/*"
+      ],
+      "@danilurist/stt": [
+        "../../packages/stt/src/index.ts"
+      ],
+      "@danilurist/stt/*": [
+        "../../packages/stt/src/*"
+      ],
+      "@danilurist/docx-export": [
+        "../../packages/docx-export/src/index.ts"
+      ],
+      "@danilurist/docx-export/*": [
+        "../../packages/docx-export/src/*"
+      ],
+      "@danilurist/ui": [
+        "../../packages/ui/src/index.ts"
+      ],
+      "@danilurist/ui/*": [
+        "../../packages/ui/src/*"
+      ]
+    },
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "pages/**/*.tsx",
+    ".next/types/**/*.ts",
+    "config/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist"
+  ]
+}

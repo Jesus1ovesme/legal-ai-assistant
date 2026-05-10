@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "legal": {
+      "command": "./node_modules/.bin/tsx",
+      "args": ["./apps/legal-mcp/src/server.ts"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}",
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

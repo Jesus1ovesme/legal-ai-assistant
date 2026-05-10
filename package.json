@@ -1,0 +1,45 @@
+{
+  "name": "danilurist",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-помощник для юриста (example.com) — single-user web app с file sandbox, RAG, tool-use по российским НПА и судпрактике",
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\" --ignore-path .gitignore",
+    "db:generate": "pnpm -F @danilurist/db drizzle-kit generate",
+    "db:migrate": "pnpm -F @danilurist/db drizzle-kit migrate",
+    "db:push": "pnpm -F @danilurist/db drizzle-kit push",
+    "db:studio": "pnpm -F @danilurist/db drizzle-kit studio",
+    "bootstrap:user": "pnpm -F @danilurist/scripts run bootstrap",
+    "start:prod": "pm2 start ecosystem.config.cjs",
+    "stop:prod": "pm2 stop ecosystem.config.cjs",
+    "logs:prod": "pm2 logs"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "eslint": "9.17.0",
+    "prettier": "3.4.2",
+    "turbo": "2.3.3",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "vitest": "2.1.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.4",
+      "@types/react-dom": "19.0.2",
+      "react": "19.0.0",
+      "react-dom": "19.0.0"
+    }
+  }
+}

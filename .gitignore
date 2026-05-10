@@ -1,0 +1,55 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build artifacts
+dist/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+INITIAL_PASSWORD.txt
+
+# user data — НИКОГДА не коммитим клиентские документы и БД-дампы
+uploads/
+*.dump
+*.sql.gz
+.cache/
+
+# logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+.pm2/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# coverage
+coverage/
+*.lcov
+
+# misc
+.eslintcache
+.prettiercache
+
+# Extended
+.env
+.env.local
+.env.production
+!.env.example
+logs/
+*.log
+ecosystem.config.cjs
+ecosystem.config.js

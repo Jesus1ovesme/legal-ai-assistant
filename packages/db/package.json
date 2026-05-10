@@ -1,0 +1,35 @@
+{
+  "name": "@danilurist/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./queries": "./src/queries/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "drizzle-kit": "drizzle-kit"
+  },
+  "dependencies": {
+    "@danilurist/types": "workspace:*",
+    "drizzle-orm": "0.38.3",
+    "pg": "8.13.1",
+    "pgvector": "0.2.0",
+    "ulid": "2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/pg": "8.11.10",
+    "drizzle-kit": "0.30.1",
+    "typescript": "5.7.3",
+    "vitest": "2.1.8",
+    "eslint": "9.17.0"
+  }
+}
