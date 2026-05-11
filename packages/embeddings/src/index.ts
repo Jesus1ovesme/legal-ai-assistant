@@ -1,5 +1,5 @@
 /**
- * @danilurist/embeddings — провайдер эмбеддингов и chunker для RAG.
+ * @legal-ai-assistant/embeddings — провайдер эмбеддингов и chunker для RAG.
  *
  * **Реализация Phase 4** (см. ROADMAP.md). MVP-провайдер: `intfloat/multilingual-e5-large`
  * локально через @huggingface/transformers (1024 dim, ~2.5 GB RAM CPU). Адаптер позволяет

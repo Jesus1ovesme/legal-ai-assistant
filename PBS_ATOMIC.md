@@ -1,4 +1,4 @@
-# PBS_ATOMIC — danilurist
+# PBS_ATOMIC — legal-ai-assistant
 
 > Product Breakdown Structure до атомарного уровня (файл / функция / интерфейс).
 > Cross-references: [PRD.md](./PRD.md), [DESIGN_DOC.md](./DESIGN_DOC.md), [INTERFACES.md](./INTERFACES.md), [ROADMAP.md](./ROADMAP.md).
@@ -36,7 +36,7 @@
 ├── 1.3 turbo.json
 │   └── ./turbo.json — pipelines build/dev/lint/typecheck/test
 ├── 1.4 tsconfig.base.json
-│   └── ./tsconfig.base.json — strict, paths aliases для @danilurist/*
+│   └── ./tsconfig.base.json — strict, paths aliases для @legal-ai-assistant/*
 ├── 1.5 tsconfig.json (root composite)
 │   └── ./tsconfig.json — references на пакеты
 ├── 1.6 .env.example
@@ -82,7 +82,7 @@
 ```
 2.0 packages/types
 ├── 2.1 package.json
-│   └── packages/types/package.json — name @danilurist/types, type module
+│   └── packages/types/package.json — name @legal-ai-assistant/types, type module
 ├── 2.2 tsconfig.json
 │   └── extends ../../tsconfig.base.json, composite=true, outDir dist
 ├── 2.3 src/case-type.ts
@@ -634,7 +634,7 @@
 │   ├── pino instance с redact policy
 │   └── reqLogger(req) child с x-request-id
 ├── 9.4 src/lib/auth/session.ts
-│   ├── ironSessionOptions = { cookieName: 'danilurist_session', password, cookieOptions: secure, httpOnly, sameSite='strict', maxAge=14d }
+│   ├── ironSessionOptions = { cookieName: 'legal-ai-assistant_session', password, cookieOptions: secure, httpOnly, sameSite='strict', maxAge=14d }
 │   ├── getSession(req): Promise<Session>
 │   ├── requireSession(req): Promise<Session> (302 to /login if missing)
 │   └── verifyOwner(folderId, userId): Promise<void>
@@ -697,7 +697,7 @@
 │   ├── experimental.serverActions
 │   └── port 3010
 ├── 10.2 tailwind.config.ts
-│   └── content: app/**/*.{ts,tsx}, components/**, paths из @danilurist/ui
+│   └── content: app/**/*.{ts,tsx}, components/**, paths из @legal-ai-assistant/ui
 ├── 10.3 postcss.config.mjs
 │   └── tailwindcss + autoprefixer
 ├── 10.4 drizzle.config.ts (apps/web)
@@ -1022,9 +1022,9 @@
 ```
 13.0 Build & Distribution
 ├── 13.1 ecosystem.config.cjs
-│   ├── danilurist-web (next standalone, port 3010, max_memory 900M, instances 1)
-│   ├── danilurist-ocr-worker (entry.ts WORKER_KIND=ocr, max 600M)
-│   └── danilurist-embed-worker (entry.ts WORKER_KIND=embed, max 800M)
+│   ├── legal-ai-assistant-web (next standalone, port 3010, max_memory 900M, instances 1)
+│   ├── legal-ai-assistant-ocr-worker (entry.ts WORKER_KIND=ocr, max 600M)
+│   └── legal-ai-assistant-embed-worker (entry.ts WORKER_KIND=embed, max 800M)
 ├── 13.2 nginx vhost
 │   ├── /etc/nginx/sites-available/<APP_DOMAIN>
 │   ├── server :443 ssl http2 (или внутренний :8447 + stream{} SNI-routing на :443)
@@ -1045,7 +1045,7 @@
 │   └── weekly: VACUUM ANALYZE postgres
 ├── 13.6 backup script
 │   ├── ./scripts/backup.sh — pg_dump + tar uploads/
-│   └── target ./backups/danilurist-{ts}.tar.gz
+│   └── target ./backups/legal-ai-assistant-{ts}.tar.gz
 └── 13.7 monitoring
     ├── /api/health (cheap) — nginx upstream check
     └── /api/ready (DB ping + freeMb) — внешний uptime monitor

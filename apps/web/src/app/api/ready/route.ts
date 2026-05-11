@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createDb } from "@danilurist/db";
+import { createDb } from "@legal-ai-assistant/db";
 import { getEnv } from "@/lib/env";
 import { sql } from "drizzle-orm";
 

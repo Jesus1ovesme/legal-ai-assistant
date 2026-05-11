@@ -1,5 +1,5 @@
 /**
- * @danilurist/claude-tools — 9 read-only инструментов для AI-чата.
+ * @legal-ai-assistant/claude-tools — 9 read-only инструментов для AI-чата.
  *
  * **Реализация Phase 3-4** (см. ROADMAP.md). Каждый tool:
  *   - JSON-schema input для Anthropic Tools API,

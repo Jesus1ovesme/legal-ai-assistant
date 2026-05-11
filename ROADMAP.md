@@ -1,4 +1,4 @@
-# ROADMAP — danilurist
+# ROADMAP — legal-ai-assistant
 
 > Дорожная карта проекта. Каждая фаза — отдельный milestone с конкретными deliverables и зависимостями.
 > Cross-references: [PRD.md](./PRD.md), [DESIGN_DOC.md](./DESIGN_DOC.md), [PBS_ATOMIC.md](./PBS_ATOMIC.md), [INTERFACES.md](./INTERFACES.md).
@@ -25,7 +25,7 @@
 - ☑ DNS Timeweb: A-запись `example.com → <SERVER_IP>`, TTL 300 *(P0)*
 - ☐ Anthropic API key, положить в `.env` как `ANTHROPIC_API_KEY=sk-ant-...` *(P0)*
 - ☑ PostgreSQL 14 + pgvector 0.8.2 + pg_trgm установлены *(P0)*
-- ☑ БД `danilurist_db` создана, role `danilurist` с привилегиями *(P0)*
+- ☑ БД `legal-ai-assistant_db` создана, role `legal-ai-assistant` с привилегиями *(P0)*
 - ☑ Каталог `<UPLOADS_ROOT>` (mode 750) *(P0)*
 - ☑ Подтверждено 443 для SNI (nginx уже настроен с stream{} SNI-routing для <EXISTING_INFRA_HOST>) *(P1)*
 - ☐ OpenAI API key (для STT) в `.env` *(P2)*

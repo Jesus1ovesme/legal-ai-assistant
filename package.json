@@ -1,5 +1,5 @@
 {
-  "name": "danilurist",
+  "name": "legal-ai-assistant",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -16,11 +16,11 @@
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\" --ignore-path .gitignore",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\" --ignore-path .gitignore",
-    "db:generate": "pnpm -F @danilurist/db drizzle-kit generate",
-    "db:migrate": "pnpm -F @danilurist/db drizzle-kit migrate",
-    "db:push": "pnpm -F @danilurist/db drizzle-kit push",
-    "db:studio": "pnpm -F @danilurist/db drizzle-kit studio",
-    "bootstrap:user": "pnpm -F @danilurist/scripts run bootstrap",
+    "db:generate": "pnpm -F @legal-ai-assistant/db drizzle-kit generate",
+    "db:migrate": "pnpm -F @legal-ai-assistant/db drizzle-kit migrate",
+    "db:push": "pnpm -F @legal-ai-assistant/db drizzle-kit push",
+    "db:studio": "pnpm -F @legal-ai-assistant/db drizzle-kit studio",
+    "bootstrap:user": "pnpm -F @legal-ai-assistant/scripts run bootstrap",
     "start:prod": "pm2 start ecosystem.config.cjs",
     "stop:prod": "pm2 stop ecosystem.config.cjs",
     "logs:prod": "pm2 logs"

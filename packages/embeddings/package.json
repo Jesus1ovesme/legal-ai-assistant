@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/embeddings",
+  "name": "@legal-ai-assistant/embeddings",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -12,7 +12,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@danilurist/types": "workspace:*",
+    "@legal-ai-assistant/types": "workspace:*",
     "@huggingface/transformers": "3.2.4"
   },
   "devDependencies": {

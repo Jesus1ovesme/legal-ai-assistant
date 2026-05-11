@@ -50,11 +50,11 @@ echo "  logout без csrf  ✓ 403"
 
 # 5. Folder ownership (term-server должен 403 на чужой ULID)
 step "term-server ownership check"
-COOKIE_VAL=$(awk '/danilurist_session/{print $7}' "$COOKIE")
+COOKIE_VAL=$(awk '/legal-ai-assistant_session/{print $7}' "$COOKIE")
 WSTEST=./apps/term-server/wstest-smoke.mjs
 cat >"$WSTEST" <<'EOF'
 import WebSocket from "ws";
-const ws=new WebSocket(`ws://127.0.0.1:3011/ws/term?folderId=${process.env.FID}`,{headers:{Cookie:`danilurist_session=${process.env.COOKIE}`}});
+const ws=new WebSocket(`ws://127.0.0.1:3011/ws/term?folderId=${process.env.FID}`,{headers:{Cookie:`legal-ai-assistant_session=${process.env.COOKIE}`}});
 let httpCode=null;
 ws.on("unexpected-response",(req,res)=>{httpCode=res.statusCode; ws.terminate();});
 ws.on("open",()=>{httpCode=200; ws.close();});

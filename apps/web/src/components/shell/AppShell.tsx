@@ -105,7 +105,7 @@ export function AppShell({ left, center, right }: AppShellProps) {
   }
 
   return (
-    <PanelGroup direction="horizontal" autoSaveId="danilurist-shell-v2">
+    <PanelGroup direction="horizontal" autoSaveId="legal-ai-assistant-shell-v2">
       <Panel defaultSize={22} minSize={16} maxSize={36} order={1}>
         <aside
           style={{

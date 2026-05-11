@@ -1,5 +1,5 @@
 /**
- * @danilurist/types — общие типы и enums всего проекта.
+ * @legal-ai-assistant/types — общие типы и enums всего проекта.
  *
  * Импортируется всеми остальными пакетами (db, sandbox, claude-client, claude-tools,
  * embeddings, ocr, stt, docx-export, ui) и приложением apps/web.

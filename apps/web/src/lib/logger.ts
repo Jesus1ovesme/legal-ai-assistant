@@ -17,7 +17,7 @@ function getLogger(): Logger {
           },
         }
       : {}),
-    base: { service: "danilurist-web" },
+    base: { service: "legal-ai-assistant-web" },
     timestamp: pino.stdTimeFunctions.isoTime,
     // pino-redact: keys с дефисами/спецсимволами должны идти через bracket-notation
     // (`headers["set-cookie"]`), plain `set-cookie` парсится как нерабочий path и

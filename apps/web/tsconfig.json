@@ -19,64 +19,64 @@
       "@/*": [
         "./src/*"
       ],
-      "@danilurist/types": [
+      "@legal-ai-assistant/types": [
         "../../packages/types/src/index.ts"
       ],
-      "@danilurist/types/*": [
+      "@legal-ai-assistant/types/*": [
         "../../packages/types/src/*"
       ],
-      "@danilurist/db": [
+      "@legal-ai-assistant/db": [
         "../../packages/db/src/index.ts"
       ],
-      "@danilurist/db/*": [
+      "@legal-ai-assistant/db/*": [
         "../../packages/db/src/*"
       ],
-      "@danilurist/sandbox": [
+      "@legal-ai-assistant/sandbox": [
         "../../packages/sandbox/src/index.ts"
       ],
-      "@danilurist/sandbox/*": [
+      "@legal-ai-assistant/sandbox/*": [
         "../../packages/sandbox/src/*"
       ],
-      "@danilurist/claude-client": [
+      "@legal-ai-assistant/claude-client": [
         "../../packages/claude-client/src/index.ts"
       ],
-      "@danilurist/claude-client/*": [
+      "@legal-ai-assistant/claude-client/*": [
         "../../packages/claude-client/src/*"
       ],
-      "@danilurist/claude-tools": [
+      "@legal-ai-assistant/claude-tools": [
         "../../packages/claude-tools/src/index.ts"
       ],
-      "@danilurist/claude-tools/*": [
+      "@legal-ai-assistant/claude-tools/*": [
         "../../packages/claude-tools/src/*"
       ],
-      "@danilurist/embeddings": [
+      "@legal-ai-assistant/embeddings": [
         "../../packages/embeddings/src/index.ts"
       ],
-      "@danilurist/embeddings/*": [
+      "@legal-ai-assistant/embeddings/*": [
         "../../packages/embeddings/src/*"
       ],
-      "@danilurist/ocr": [
+      "@legal-ai-assistant/ocr": [
         "../../packages/ocr/src/index.ts"
       ],
-      "@danilurist/ocr/*": [
+      "@legal-ai-assistant/ocr/*": [
         "../../packages/ocr/src/*"
       ],
-      "@danilurist/stt": [
+      "@legal-ai-assistant/stt": [
         "../../packages/stt/src/index.ts"
       ],
-      "@danilurist/stt/*": [
+      "@legal-ai-assistant/stt/*": [
         "../../packages/stt/src/*"
       ],
-      "@danilurist/docx-export": [
+      "@legal-ai-assistant/docx-export": [
         "../../packages/docx-export/src/index.ts"
       ],
-      "@danilurist/docx-export/*": [
+      "@legal-ai-assistant/docx-export/*": [
         "../../packages/docx-export/src/*"
       ],
-      "@danilurist/ui": [
+      "@legal-ai-assistant/ui": [
         "../../packages/ui/src/index.ts"
       ],
-      "@danilurist/ui/*": [
+      "@legal-ai-assistant/ui/*": [
         "../../packages/ui/src/*"
       ]
     },

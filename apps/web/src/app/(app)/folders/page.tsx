@@ -3,7 +3,7 @@ import { AppShell } from "@/components/shell/AppShell";
 import { FolderTree } from "@/components/folder-tree/FolderTree";
 import { requireSession } from "@/lib/auth/require-session";
 import { getEnv } from "@/lib/env";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 import { and, desc, eq, sql } from "drizzle-orm";
 
 export const dynamic = "force-dynamic";

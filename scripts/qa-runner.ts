@@ -2,8 +2,8 @@
  * Autonomous QA harness — гонит сценарии через /api/chat/stream и анализирует.
  *
  * Запуск:
- *   pnpm -F @danilurist/scripts exec tsx qa-runner.ts --count 30 --effort low
- *   pnpm -F @danilurist/scripts exec tsx qa-runner.ts --count 5 --effort max --keep-folders
+ *   pnpm -F @legal-ai-assistant/scripts exec tsx qa-runner.ts --count 30 --effort low
+ *   pnpm -F @legal-ai-assistant/scripts exec tsx qa-runner.ts --count 5 --effort max --keep-folders
  *
  * Output:
  *   ./logs/qa-{timestamp}.jsonl   — per-scenario metrics

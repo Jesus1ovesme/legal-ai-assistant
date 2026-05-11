@@ -10,7 +10,7 @@ export interface SessionData {
   issuedAt?: number;
 }
 
-const SESSION_COOKIE_NAME = "danilurist_session";
+const SESSION_COOKIE_NAME = "legal-ai-assistant_session";
 
 /** Ленивое формирование SessionOptions, чтобы env читался уже в runtime. */
 function getSessionOptions(): SessionOptions {

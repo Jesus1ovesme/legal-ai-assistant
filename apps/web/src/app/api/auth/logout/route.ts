@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getSession } from "@/lib/auth/session";
 import { verifyCsrf } from "@/lib/auth/csrf";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 import { getEnv } from "@/lib/env";
 
 export const dynamic = "force-dynamic";

@@ -9,8 +9,8 @@ import { createHash } from "node:crypto";
 import { readdir, readFile, lstat, stat } from "node:fs/promises";
 import * as path from "node:path";
 import { eq } from "drizzle-orm";
-import { detectMime } from "@danilurist/sandbox";
-import { schema, newUlid, type DrizzleClient } from "@danilurist/db";
+import { detectMime } from "@legal-ai-assistant/sandbox";
+import { schema, newUlid, type DrizzleClient } from "@legal-ai-assistant/db";
 import type { Logger } from "pino";
 
 interface RegisterOpts {

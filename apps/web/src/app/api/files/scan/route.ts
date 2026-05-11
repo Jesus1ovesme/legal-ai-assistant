@@ -1,8 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { eq } from "drizzle-orm";
-import { createDb, schema } from "@danilurist/db";
-import { ULID_REGEX } from "@danilurist/types";
+import { createDb, schema } from "@legal-ai-assistant/db";
+import { ULID_REGEX } from "@legal-ai-assistant/types";
 import { getEnv } from "@/lib/env";
 import { requireSession } from "@/lib/auth/require-session";
 import { verifyCsrf } from "@/lib/auth/csrf";

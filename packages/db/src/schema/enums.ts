@@ -1,6 +1,6 @@
 import { pgEnum } from "drizzle-orm/pg-core";
 
-/** Тип юр. дела. Значения совпадают с {@link import("@danilurist/types").CaseType}. */
+/** Тип юр. дела. Значения совпадают с {@link import("@legal-ai-assistant/types").CaseType}. */
 export const caseTypeEnum = pgEnum("case_type", [
   "OSAGO",
   "DTP",

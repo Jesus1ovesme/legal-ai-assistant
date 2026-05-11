@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { sql } from "drizzle-orm";
 import { statfs } from "node:fs/promises";
 import { connect } from "node:tls";
-import { createDb } from "@danilurist/db";
+import { createDb } from "@legal-ai-assistant/db";
 import { getEnv } from "@/lib/env";
 
 export const dynamic = "force-dynamic";

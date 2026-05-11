@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/legal-mcp",
+  "name": "@legal-ai-assistant/legal-mcp",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
     "drizzle-orm": "0.38.3",
     "pg": "^8.13.0",
     "zod": "^3.25.0",
-    "@danilurist/db": "workspace:*",
+    "@legal-ai-assistant/db": "workspace:*",
     "socks-proxy-agent": "^8.0.4",
     "undici": "^7.10.0"
   },

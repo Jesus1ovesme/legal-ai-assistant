@@ -1,4 +1,4 @@
-# INTERFACES — danilurist
+# INTERFACES — legal-ai-assistant
 
 > Полный набор TypeScript типов и интерфейсов системы. Source of truth для `packages/types` и для контрактов между модулями.
 > Cross-references: [PRD.md](./PRD.md), [DESIGN_DOC.md](./DESIGN_DOC.md), [PBS_ATOMIC.md](./PBS_ATOMIC.md), [ROADMAP.md](./ROADMAP.md).
@@ -359,7 +359,7 @@ export interface ToolCtx {
   /** Папки, явно упомянутые юристом в текущем сообщении через `@<имя>`. */
   mentionedFolders: Array<{ id: ULID; name: string }>;
   /** Drizzle DB instance. */
-  db: import('@danilurist/db').DbClient;
+  db: import('@legal-ai-assistant/db').DbClient;
   /** undici или native fetch — единый http клиент с timeouts/redacts. */
   http: {
     fetch: typeof fetch;
@@ -888,7 +888,7 @@ export const useUiStore = create<UiState>()(
       setDropZoneVisible: (v) => set({ dropZoneVisible: v }),
       setTheme: (t) => set({ theme: t }),
     }),
-    { name: 'danilurist-ui' }
+    { name: 'legal-ai-assistant-ui' }
   )
 );
 ```

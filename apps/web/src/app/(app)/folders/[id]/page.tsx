@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { and, eq } from "drizzle-orm";
-import { createDb, schema } from "@danilurist/db";
-import { CaseType, ULID_REGEX } from "@danilurist/types";
+import { createDb, schema } from "@legal-ai-assistant/db";
+import { CaseType, ULID_REGEX } from "@legal-ai-assistant/types";
 import { getEnv } from "@/lib/env";
 import { getSession } from "@/lib/auth/session";
 import { AppShell } from "@/components/shell/AppShell";

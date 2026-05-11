@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { desc, eq } from "drizzle-orm";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 import { getEnv } from "@/lib/env";
 import { requireSession } from "@/lib/auth/require-session";
 

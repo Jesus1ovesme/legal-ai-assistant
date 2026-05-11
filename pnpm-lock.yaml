@@ -38,7 +38,7 @@ importers:
 
   apps/legal-mcp:
     dependencies:
-      '@danilurist/db':
+      '@legal-ai-assistant/db':
         specifier: workspace:*
         version: link:../../packages/db
       '@modelcontextprotocol/sdk':
@@ -102,34 +102,34 @@ importers:
       '@anthropic-ai/sdk':
         specifier: 0.39.0
         version: 0.39.0
-      '@danilurist/claude-client':
+      '@legal-ai-assistant/claude-client':
         specifier: workspace:*
         version: link:../../packages/claude-client
-      '@danilurist/claude-tools':
+      '@legal-ai-assistant/claude-tools':
         specifier: workspace:*
         version: link:../../packages/claude-tools
-      '@danilurist/db':
+      '@legal-ai-assistant/db':
         specifier: workspace:*
         version: link:../../packages/db
-      '@danilurist/docx-export':
+      '@legal-ai-assistant/docx-export':
         specifier: workspace:*
         version: link:../../packages/docx-export
-      '@danilurist/embeddings':
+      '@legal-ai-assistant/embeddings':
         specifier: workspace:*
         version: link:../../packages/embeddings
-      '@danilurist/ocr':
+      '@legal-ai-assistant/ocr':
         specifier: workspace:*
         version: link:../../packages/ocr
-      '@danilurist/sandbox':
+      '@legal-ai-assistant/sandbox':
         specifier: workspace:*
         version: link:../../packages/sandbox
-      '@danilurist/stt':
+      '@legal-ai-assistant/stt':
         specifier: workspace:*
         version: link:../../packages/stt
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@danilurist/ui':
+      '@legal-ai-assistant/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@xterm/addon-canvas':
@@ -274,7 +274,7 @@ importers:
       '@anthropic-ai/sdk':
         specifier: 0.39.0
         version: 0.39.0
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       https-proxy-agent:
@@ -305,10 +305,10 @@ importers:
 
   packages/claude-tools:
     dependencies:
-      '@danilurist/db':
+      '@legal-ai-assistant/db':
         specifier: workspace:*
         version: link:../db
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       cheerio:
@@ -342,7 +342,7 @@ importers:
 
   packages/db:
     dependencies:
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       drizzle-orm:
@@ -410,7 +410,7 @@ importers:
 
   packages/embeddings:
     dependencies:
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       '@huggingface/transformers':
@@ -432,7 +432,7 @@ importers:
 
   packages/ocr:
     dependencies:
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       mammoth:
@@ -454,7 +454,7 @@ importers:
 
   packages/sandbox:
     dependencies:
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       file-type:
@@ -476,7 +476,7 @@ importers:
 
   packages/stt:
     dependencies:
-      '@danilurist/types':
+      '@legal-ai-assistant/types':
         specifier: workspace:*
         version: link:../types
       openai:

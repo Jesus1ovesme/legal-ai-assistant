@@ -1,5 +1,5 @@
 /**
- * @danilurist/ui — общие React-компоненты (shadcn/ui based).
+ * @legal-ai-assistant/ui — общие React-компоненты (shadcn/ui based).
  *
  * **Реализация Phase 1+** (apps/web shell). Содержит cn() helper и реэкспорт
  * базовых shadcn-компонентов (Button, Dialog, Input, Tooltip, Toaster, Tabs).

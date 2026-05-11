@@ -1,5 +1,5 @@
 /**
- * @danilurist/claude-client — адаптер к Claude (api | api+proxy | relay).
+ * @legal-ai-assistant/claude-client — адаптер к Claude (api | api+proxy | relay).
  *
  * **Реализация Phase 2** (см. ROADMAP.md). На текущей фазе — только тип-стабы и
  * маппинг effort→model, чтобы можно было typecheck'ить зависимый код.
@@ -10,7 +10,7 @@
  *   - effort: low/medium/high/max → model + thinking budget
  *   - retry exp-backoff, circuit breaker, prompt caching
  */
-import { Effort, type ClaudeModelId } from "@danilurist/types";
+import { Effort, type ClaudeModelId } from "@legal-ai-assistant/types";
 
 /** Маппинг effort → выбранная модель. */
 export const EFFORT_TO_MODEL: Record<Effort, ClaudeModelId> = {
@@ -36,4 +36,4 @@ export const EFFORT_TOOLS_ENABLED: Record<Effort, boolean> = {
   [Effort.MAX]: true,
 };
 
-export type { Effort, ClaudeModelId } from "@danilurist/types";
+export type { Effort, ClaudeModelId } from "@legal-ai-assistant/types";

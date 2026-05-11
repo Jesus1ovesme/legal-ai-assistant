@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { eq, and, gt, sql } from "drizzle-orm";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 
 const DB_URL = process.env.DATABASE_URL;
 if (!DB_URL) {

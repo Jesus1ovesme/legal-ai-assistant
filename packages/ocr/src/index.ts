@@ -1,5 +1,5 @@
 /**
- * @danilurist/ocr — OCR pipeline (Tesseract `rus+eng` + pdftotext fallback + mammoth).
+ * @legal-ai-assistant/ocr — OCR pipeline (Tesseract `rus+eng` + pdftotext fallback + mammoth).
  *
  * **Реализация Phase 3** (см. ROADMAP.md). Стратегия:
  *   - PDF: сначала `pdftotext -layout` (быстрый embedded text). Если >300 значимых

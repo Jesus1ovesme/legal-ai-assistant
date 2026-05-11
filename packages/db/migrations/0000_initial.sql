@@ -1,4 +1,4 @@
--- danilurist initial schema
+-- legal-ai-assistant initial schema
 -- Idempotent: использует IF NOT EXISTS / DO blocks. Безопасно к повторному запуску.
 -- Генерируется вручную (а не drizzle-kit generate), потому что:
 --   1) CREATE EXTENSION должен идти до CREATE TABLE c vector-колонками.

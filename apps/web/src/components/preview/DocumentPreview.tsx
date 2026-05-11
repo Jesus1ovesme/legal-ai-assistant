@@ -480,7 +480,7 @@ export function DocumentPreview({ folderId, folderName, caseTypeLabel }: Documen
               onDragStart={(e) => {
                 // Передаём имя файла. xterm на drop отправит "@<filename> " в claude.
                 e.dataTransfer.effectAllowed = "copy";
-                e.dataTransfer.setData("text/x-danilurist-file", f.filename);
+                e.dataTransfer.setData("text/x-legal-ai-assistant-file", f.filename);
                 e.dataTransfer.setData("text/plain", `@${f.filename} `);
               }}
               title="Перетащи в чат, чтобы Claude увидел этот файл (@-mention)"

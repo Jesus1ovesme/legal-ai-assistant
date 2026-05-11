@@ -11,7 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@danilurist/types": new URL("../types/src/index.ts", import.meta.url).pathname,
+      "@legal-ai-assistant/types": new URL("../types/src/index.ts", import.meta.url).pathname,
     },
   },
 });

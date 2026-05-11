@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { timingSafeEqual } from "node:crypto";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 import { getEnv } from "@/lib/env";
 import { getSession } from "@/lib/auth/session";
 import { logger } from "@/lib/logger";

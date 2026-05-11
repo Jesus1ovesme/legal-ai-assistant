@@ -214,7 +214,7 @@ Claude имеет 8 встроенных инструментов для юр-р
 ### Авторизация
 
 - Один ключ доступа. **Никому не передавайте.**
-- При утечке — измените `APP_ACCESS_KEY` в `.env` и рестарт `pm2 restart danilurist-web`.
+- При утечке — измените `APP_ACCESS_KEY` в `.env` и рестарт `pm2 restart legal-ai-assistant-web`.
 
 ### Бэкапы
 

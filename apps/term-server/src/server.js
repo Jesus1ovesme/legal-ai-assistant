@@ -45,7 +45,7 @@ const CONFIG = {
   PORT: Number(ENV.TERM_SERVER_PORT || 3011),
   HOST: "127.0.0.1",
   UPLOADS_ROOT: ENV.UPLOADS_ROOT || path.join(process.cwd(), "uploads"),
-  SESSION_COOKIE: ENV.SESSION_COOKIE_NAME || "danilurist_session",
+  SESSION_COOKIE: ENV.SESSION_COOKIE_NAME || "legal-ai-assistant_session",
   SESSION_PASSWORD: ENV.SESSION_PASSWORD || "",
   CLAUDE_BIN: ENV.CLAUDE_BIN || "claude",
   HISTORY_BYTES: 32 * 1024,

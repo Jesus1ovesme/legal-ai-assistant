@@ -1,4 +1,4 @@
-# DESIGN_DOC — danilurist
+# DESIGN_DOC — legal-ai-assistant
 
 > Архитектурный документ. Источник истины для всех технических решений.
 > Cross-references: [PRD.md](./PRD.md), [PBS_ATOMIC.md](./PBS_ATOMIC.md), [INTERFACES.md](./INTERFACES.md), [ROADMAP.md](./ROADMAP.md).
@@ -7,7 +7,7 @@
 
 ## 1. Overview
 
-**danilurist** — модульный монолит для одного пользователя (практикующего юриста). Главная философия:
+**legal-ai-assistant** — модульный монолит для одного пользователя (практикующего юриста). Главная философия:
 
 1. **Инструмент юриста, а не кодера**. Никаких терминалов, командной строки, сложных меню. 3-pane UI как в Claude Projects: дерево слева, чат в центре, документ справа. Drag&drop, push-to-talk, кнопка «Экспорт в .docx» — всё.
 2. **KISS на каждом слое**. Один Postgres вместо «Postgres + Redis + S3 + ClickHouse». pg-boss поверх Postgres вместо Bull. SSE вместо WebSocket. Локальный e5-large вместо облачных embeddings.
@@ -763,7 +763,7 @@ if (count === 0) {
 
 ### 10.2. iron-session
 
-- Cookie: `danilurist_session`, `Secure`, `httpOnly`, `SameSite=Strict`, `Max-Age=14d`.
+- Cookie: `legal-ai-assistant_session`, `Secure`, `httpOnly`, `SameSite=Strict`, `Max-Age=14d`.
 - Шифрование: AES-256-GCM на `SESSION_PASSWORD` (32+ байт base64url из `.env`).
 - Payload: `{ userId, email, csrfSecret }` — компактный, parseable за <1 ms.
 

@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/db",
+  "name": "@legal-ai-assistant/db",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -18,7 +18,7 @@
     "drizzle-kit": "drizzle-kit"
   },
   "dependencies": {
-    "@danilurist/types": "workspace:*",
+    "@legal-ai-assistant/types": "workspace:*",
     "drizzle-orm": "0.38.3",
     "pg": "8.13.1",
     "pgvector": "0.2.0",

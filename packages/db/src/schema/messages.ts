@@ -12,7 +12,7 @@ import {
 } from "drizzle-orm/pg-core";
 import { folders } from "./folders";
 import { messageRoleEnum } from "./enums";
-import type { Citation, ToolCall } from "@danilurist/types";
+import type { Citation, ToolCall } from "@legal-ai-assistant/types";
 
 /**
  * Сообщение в чате папки.

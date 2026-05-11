@@ -291,13 +291,13 @@ export function XTermView({ folderId, active }: XTermViewProps) {
   // Drop файла из правой панели → отправляем @-mention в xterm.
   // Claude code распознаёт @<path> и подгружает файл в контекст.
   const onDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    if (e.dataTransfer.types.includes("text/x-danilurist-file")) {
+    if (e.dataTransfer.types.includes("text/x-legal-ai-assistant-file")) {
       e.preventDefault();
       e.dataTransfer.dropEffect = "copy";
     }
   };
   const onDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    const filename = e.dataTransfer.getData("text/x-danilurist-file");
+    const filename = e.dataTransfer.getData("text/x-legal-ai-assistant-file");
     if (!filename) return;
     e.preventDefault();
     const s = stateRef.current;

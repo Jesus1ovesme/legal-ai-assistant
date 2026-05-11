@@ -21,7 +21,7 @@ export interface CreateDbOptions {
  *
  * Использование:
  * ```ts
- * import { createDb } from "@danilurist/db";
+ * import { createDb } from "@legal-ai-assistant/db";
  * const db = createDb({ connectionString: process.env.DATABASE_URL! });
  * const folder = await db.query.folders.findFirst({...});
  * ```

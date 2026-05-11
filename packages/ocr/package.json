@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/ocr",
+  "name": "@legal-ai-assistant/ocr",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -12,7 +12,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@danilurist/types": "workspace:*",
+    "@legal-ai-assistant/types": "workspace:*",
     "mammoth": "1.8.0"
   },
   "devDependencies": {

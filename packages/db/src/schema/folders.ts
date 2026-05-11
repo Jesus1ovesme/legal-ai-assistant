@@ -4,7 +4,7 @@ import { caseTypeEnum, effortEnum } from "./enums";
 import { users } from "./users";
 
 /**
- * Папка дела = чат-сессия. См. domain-описание в @danilurist/types/folder.ts.
+ * Папка дела = чат-сессия. См. domain-описание в @legal-ai-assistant/types/folder.ts.
  *
  * `system_prompt` копируется из YAML-пресета на момент создания, чтобы изменения
  * YAML позже не ломали семантику существующих папок (audit safety).

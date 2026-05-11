@@ -1,6 +1,6 @@
 # Changelog
 
-Все значимые изменения проекта **danilurist** фиксируются в этом файле в обратном хронологическом порядке.
+Все значимые изменения проекта **legal-ai-assistant** фиксируются в этом файле в обратном хронологическом порядке.
 
 Категории: `added`, `changed`, `fixed`, `removed`, `infrastructure`.
 
@@ -15,7 +15,7 @@
 - **added**: `.env.example` с полным набором переменных (auth, DB, Anthropic, embeddings, STT, SearXNG, file sandbox, logging).
 - **added**: README.md с quickstart и ссылками на доки.
 - **infrastructure**: PostgreSQL 14 + pgvector 0.8.2 + pg_trgm установлены и работают на VPS `<SERVER_IP>`.
-- **infrastructure**: БД `danilurist_db` создана, role `danilurist` с привилегиями GRANT.
+- **infrastructure**: БД `legal-ai-assistant_db` создана, role `legal-ai-assistant` с привилегиями GRANT.
 - **infrastructure**: Каталог `<UPLOADS_ROOT>` (mode 750) подготовлен.
 - **infrastructure**: Решение по транспорту: `CLAUDE_TRANSPORT=api` для MVP. Релей `<PROXY_HOST>` — это VPN/Xray, не OAuth-прокси к Claude. Slot `relay-transport.ts` оставлен в `packages/claude-client` как заглушка под будущую интеграцию.
 - **commit**: будет добавлен после первого коммита (`feat: initial project setup`).

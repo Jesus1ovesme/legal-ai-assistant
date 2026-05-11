@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/sandbox",
+  "name": "@legal-ai-assistant/sandbox",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -15,7 +15,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@danilurist/types": "workspace:*",
+    "@legal-ai-assistant/types": "workspace:*",
     "file-type": "19.6.0"
   },
   "devDependencies": {

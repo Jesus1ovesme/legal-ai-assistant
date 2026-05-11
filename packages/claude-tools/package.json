@@ -1,5 +1,5 @@
 {
-  "name": "@danilurist/claude-tools",
+  "name": "@legal-ai-assistant/claude-tools",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -12,8 +12,8 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@danilurist/types": "workspace:*",
-    "@danilurist/db": "workspace:*",
+    "@legal-ai-assistant/types": "workspace:*",
+    "@legal-ai-assistant/db": "workspace:*",
     "cheerio": "1.0.0",
     "turndown": "7.2.0",
     "undici": "7.2.0",

@@ -1,4 +1,4 @@
-# danilurist
+# legal-ai-assistant
 
 AI-помощник для юриста. Single-user web-приложение, размещаемое на `example.com`.
 

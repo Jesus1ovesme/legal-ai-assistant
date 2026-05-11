@@ -7,7 +7,7 @@ import { getEnv } from "@/lib/env";
 import { requireSession } from "@/lib/auth/require-session";
 import { verifyCsrf } from "@/lib/auth/csrf";
 import { logger } from "@/lib/logger";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";

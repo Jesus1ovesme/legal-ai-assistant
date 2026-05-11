@@ -1,6 +1,6 @@
 import * as path from "node:path";
 import * as fs from "node:fs";
-import { ULID_REGEX } from "@danilurist/types";
+import { ULID_REGEX } from "@legal-ai-assistant/types";
 import { SandboxError } from "./errors";
 
 /** Максимальная длина имени файла на диске (большинство FS — 255). */

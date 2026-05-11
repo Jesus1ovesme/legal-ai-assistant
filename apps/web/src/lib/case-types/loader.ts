@@ -2,7 +2,7 @@ import { readFileSync, statSync } from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse as parseYaml } from "yaml";
-import { CaseTypeDefinitionSchema, CaseType, type CaseTypeDefinitionParsed } from "@danilurist/types";
+import { CaseTypeDefinitionSchema, CaseType, type CaseTypeDefinitionParsed } from "@legal-ai-assistant/types";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONFIG_DIR = path.resolve(__dirname, "..", "..", "..", "config", "case-types");

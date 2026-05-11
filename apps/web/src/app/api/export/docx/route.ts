@@ -13,8 +13,8 @@ import { fromMarkdown } from "mdast-util-from-markdown";
 import { gfm } from "micromark-extension-gfm";
 import { gfmFromMarkdown } from "mdast-util-gfm";
 import type { Root, Content, PhrasingContent } from "mdast";
-import { createDb, schema } from "@danilurist/db";
-import { ULID_REGEX } from "@danilurist/types";
+import { createDb, schema } from "@legal-ai-assistant/db";
+import { ULID_REGEX } from "@legal-ai-assistant/types";
 import { getEnv } from "@/lib/env";
 import { requireSession } from "@/lib/auth/require-session";
 
@@ -173,7 +173,7 @@ function markdownToDocx(markdown: string, title: string): Promise<Buffer> {
   //   left=30mm=1701twip, right=15mm=850, top=20mm=1134, bottom=20mm=1134
   // Times New Roman 14pt = size 28 (half-points). Межстрочный 1.5x.
   const doc = new Document({
-    creator: "danilurist",
+    creator: "legal-ai-assistant",
     title,
     styles: {
       default: {

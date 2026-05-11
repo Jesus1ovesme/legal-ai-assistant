@@ -1,5 +1,5 @@
 /**
- * @danilurist/stt — голосовой ввод через Whisper.
+ * @legal-ai-assistant/stt — голосовой ввод через Whisper.
  *
  * **Реализация Phase 3** (см. ROADMAP.md). MVP-провайдер: **OpenAI Whisper API**
  * (RAM сервера 5.8 GB total / 2.5 GB free — локальный whisper.cpp medium небезопасен).

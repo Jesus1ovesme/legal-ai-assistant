@@ -1,5 +1,5 @@
 /**
- * @danilurist/sandbox — изоляция файловых операций внутри `<UPLOADS_ROOT>/<folderId>/`.
+ * @legal-ai-assistant/sandbox — изоляция файловых операций внутри `<UPLOADS_ROOT>/<folderId>/`.
  *
  * API:
  *   - {@link resolveSandboxPath} — построение безопасного абсолютного пути.
@@ -19,5 +19,5 @@ export { writeFile, removeFile } from "./store";
 export type { WriteFileOptions, WrittenFile } from "./store";
 export { SandboxError } from "./errors";
 export type { SandboxErrorCode } from "./errors";
-// re-export для удобства, хотя зависимый код может импортировать напрямую из @danilurist/types
-export type { ULID } from "@danilurist/types";
+// re-export для удобства, хотя зависимый код может импортировать напрямую из @legal-ai-assistant/types
+export type { ULID } from "@legal-ai-assistant/types";

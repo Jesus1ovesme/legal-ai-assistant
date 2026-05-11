@@ -20,7 +20,7 @@ import { config as loadDotenv } from "dotenv";
 import PgBoss from "pg-boss";
 import { eq } from "drizzle-orm";
 import mammoth from "mammoth";
-import { createDb, schema } from "@danilurist/db";
+import { createDb, schema } from "@legal-ai-assistant/db";
 
 const __envPath = process.env.DOTENV_CONFIG_PATH ?? ".env";
 loadDotenv({ path: __envPath });
